@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<style>
+        th{
+            color: blue;
+        }
+    </style>
+
+    <table class="table">
+        <tr class="bg-info">
+            <th> Name</th>
+            <th> Class</th>
+            <th> Year of graduation</th>
+        </tr>
+        <tbody id="myTable">
+
+        </tbody>
+
+    </table>
+    <script>
+        var myArray = [
+            {'name':'Seyi', 'Class':'JS1', 'Year':'2028'},
+            {'name':'Kemi', 'Class':'JS2', 'Year':'2027'},
+            {'name':'Femi', 'Class':'JS3', 'Year':'2026'},
+            {'name':'Bayo', 'Class':'SS1', 'Year':'2025'},
+            {'name':'Tola', 'Class':'SS2', 'Year':'2024'},
+            {'name':'Niyi', 'Class':'SS3', 'Year':'2023'},
+        ]            
+        function buildTable(data) {
+            var table = document.getElementById('myTable')    
+            for (let index = 0; index < array.length; index++) {
+            var row = `<tr>
+                            <td>${data[index].name}</td>
+                            <td>${data[index].Class}</td>
+                            <td>${data[index].Year}</td>
+                </tr>`
+                table.innerHTML +=row
+            }        
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
